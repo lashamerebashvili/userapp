@@ -1,0 +1,13 @@
+@import 'src/_config.scss';
+
+.btn-user {
+    width: 100%;
+    height: 50px;
+    font-size: 1rem;
+    background: $primary-color;
+    color: #fff;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

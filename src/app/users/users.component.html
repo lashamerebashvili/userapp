@@ -1,0 +1,16 @@
+<div class="section-title">
+    <h2>Users:</h2>
+</div>
+
+<div class="user-list">
+<!-- სერვისში HttpClient-ის საშუალებით შევქმენი მეთოდები, რომლებიც აბრუნებენ Observable-ს.
+  ამ Observable-ბის გამოსატანად ვიყენებ async პაიპს. ამ გზით ჩვენ არ გვიწევს ხელით subscribe-ს
+  დაწერა მეთოდისთვის, რადგან async პაიპი თავად აკეთებს როგორც subscribe-ს, ისე unsubscribe-ს -->
+      <ul *ngFor="let user of users | async">
+        <li>
+          <button class="btn-user" [routerLink] = "['/users', user.id]">
+            {{user.name}}
+          </button>
+        </li>
+      </ul>
+</div>

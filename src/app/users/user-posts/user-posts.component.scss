@@ -1,0 +1,8 @@
+@import 'src/_config.scss';
+
+.user-list ul li {
+    text-align: left;
+    font-size: 1.1rem;
+    padding: 15px;
+    border-bottom: 1px solid $primary-color;
+}

@@ -1,0 +1,22 @@
+@import 'src/_config.scss';
+
+.user-list {
+    width: 30%;
+
+    ul li {
+        text-align: left;
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    button {
+        width: 100%;
+        height: 40px;
+        margin-top: 30px;
+        font-size: 1.1rem;
+        border: none;
+        color: #fff;
+        background: $primary-color;
+        cursor: pointer;
+    }
+}

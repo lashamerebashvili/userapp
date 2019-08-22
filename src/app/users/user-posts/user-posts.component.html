@@ -1,0 +1,12 @@
+<div class="section-title">
+        <button (click)="usersService.goBack()" class="btn-back">
+            Back
+        </button>
+        <h2>Posts:</h2>
+</div>
+
+<div class="user-list">
+    <ul *ngFor="let post of userPosts | async">
+        <li>{{post.title}}</li>
+    </ul>
+  </div>

@@ -1,1 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'config';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: $background-color;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+}
+
+header {
+    background: $header-color;
+    font-family: 'Amatic SC', cursive;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    border-bottom: 1.5px solid $primary-color;
+}
+
+.section-title {
+    width: 80%;
+    height: 70px;
+    line-height: 70px;
+    margin: 0 auto;
+}
+
+.user-list {
+    width: 35%;
+    margin: 0 auto;
+
+    ul {
+        list-style: none;
+
+        li {
+            text-align: center;
+        }
+    }
+}
+
+.btn-back {
+    width: 70px;
+    height: 35px;
+    font-size: 1rem;
+    background: $primary-color;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 17px;
+    float: right;
+    cursor: pointer;
+}

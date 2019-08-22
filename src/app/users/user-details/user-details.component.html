@@ -1,0 +1,22 @@
+<div class="section-title">
+    <button (click)="usersService.goBack()" class="btn-back">
+            Back
+    </button>
+    <h2>User Details:</h2>
+</div>
+
+  <div class="user-list">
+          <ul
+          *ngFor="let userdetail of userdetails | async" >
+                <li>Name: {{userdetail.name}}</li>
+                <li>Email: {{userdetail.email}}</li>
+                <li>Address: {{userdetail.address.street}} Street, {{userdetail.address.city}}</li>
+                <li>Phone: {{userdetail.phone}}</li>
+                <li>Website: {{userdetail.website}}</li>
+            <li>
+                <button [routerLink] = "['/posts', userdetail.id]">
+                    {{userdetail.name}}`s posts
+                </button>
+            </li>
+          </ul>
+  </div>
